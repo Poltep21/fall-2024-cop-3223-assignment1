@@ -34,7 +34,6 @@ double calculateDistance(){
     printf("Point #1 entered: (%d, %d)\nPoint #2 entered: (%d, %d)\n", x1, y1, x2, y2);
 
     double distance = sqrt( pow(x2-x1, 2) + pow(y2-y1, 2));
-    printf("The distance between the two points is %.2lf\n", distance);
     return distance;
 }
 
@@ -95,7 +94,8 @@ double calculateHeight(){
 }
 
 int main(int argc, char **argv){
-    calculateDistance();
+    double distance = calculateDistance();
+    printf("The distance between the two points is %.2lf\n", distance);
     calculatePerimeter();
     calculateArea();
     calculateWidth();
